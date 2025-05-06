@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTENEDORES</title>
+    <link rel="stylesheet" href="public/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="validationServer01" class="form-label">First name</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServer02" class="form-label">Last name</label>
+            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServerUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Please choose a username.
+                </div><!DOCTYPE html>
+                <html lang="es">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                  <title>Calculadora</title>
+                  <link rel="stylesheet" href="public/bootstrap-5.3.5-dist/css/bootstrap.min.css" />
+                </head>
+                <body class="bg-light">
+                
+                  <div class="container py-4">
+                    <h1 class="text-center mb-4">CALCULADORA</h1>
+                
+                    <!-- Display -->
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-12 col-sm-10 col-md-6">
+                        <input type="text" id="txt_caja_resultado" class="form-control form-control-lg text-end" readonly>
+                      </div>
+                    </div>
+                
+                    <!-- Botones -->
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-sm-10 col-md-6">
+                        <div class="row row-cols-4 g-2">
+                
+                          <!-- Fila 1 -->
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="7">7</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="8">8</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="9">9</button></div>
+                          <div class="col"><button class="btn btn-secondary w-100" data-valor="/">/</button></div>
+                
+                          <!-- Fila 2 -->
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="4">4</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="5">5</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="6">6</button></div>
+                          <div class="col"><button class="btn btn-secondary w-100" data-valor="*">*</button></div>
+                
+                          <!-- Fila 3 -->
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="1">1</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="2">2</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="3">3</button></div>
+                          <div class="col"><button class="btn btn-secondary w-100" data-valor="-">-</button></div>
+                
+                          <!-- Fila 4 -->
+                          <div class="col"><button class="btn btn-primary w-100" data-valor="0">0</button></div>
+                          <div class="col"><button class="btn btn-primary w-100" data-valor=".">.</button></div>
+                          <div class="col"><button class="btn btn-success w-100" data-valor="=">=</button></div>
+                          <div class="col"><button class="btn btn-secondary w-100" data-valor="+">+</button></div>
+                
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <script src="public/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+                  <script src="public/dist/js/calculadora.js"></script>
+                </body>
+                </html>
+                
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationServer03" class="form-label">City</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" required>
+            <div id="validationServer03Feedback" class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationServer04" class="form-label">State</label>
+            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
+                required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                    aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+    <script src="public/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
