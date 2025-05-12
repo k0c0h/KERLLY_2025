@@ -1,0 +1,94 @@
+<div class="container mt-5">
+    <h1 class="mb-4">Dashboard sobre Datos Generales</h1>
+
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <div class="card border-left-primary shadow">
+                <div class="card-body">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 fas fa-book"> Préstamos Mensuales</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">45</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card border-left-success shadow">
+                <div class="card-body">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1 fas fa-calendar"> Préstamos Anuales</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">532</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card border-left-info shadow">
+                <div class="card-body">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1 fas fa-user"> Usuarios Registrados</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card border-left-warning shadow">
+                <div class="card-body">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1 fas fa-clock "> Libros Pendientes</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de libros más populares -->
+    <div class="card mb-4">
+        <div class="card-header bg-info text-white">
+            Libros Más Populares
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+                <b>De la tierra a la luna</b> <span class="badge badge-primary badge-pill">Prestado 20 veces</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <b>Los viajes de Gulliver</b> <span class="badge badge-primary badge-pill">Prestado 17 veces</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <b>It</b> <span class="badge badge-primary badge-pill">Prestado 14 veces</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        ⚠️ 2 libros están vencidos y no han sido devueltos por más de 15 días.
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    Estadísticas de Préstamos
+                </div>
+                <div class="card-body">
+                    <p><b>Enero:</b> 60       <b>Febrero:</b> 45</p>
+                    <p><b>Marzo:</b> 40       <b>Abril:  </b> 41</p>
+                    <figure><img src="public/img/barras.png" width="80%" class="text-center"></figure>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    Categorías Populares
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><b>Ciencia Ficción:</b> 120 préstamos</li>
+                        <li><b>Aventura:</b> 85 préstamos</li>
+                        <li><b>Terror:</b> 60 préstamos</li>
+                    </ul>
+                    <figure class="pt-3">
+                        <img src="public/img/pastel.png" width="90%" class="text-center">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<div class="container mt-5">
+    <h2>Gestión de Reservas de Libros</h2>
+
+    <!-- Tabla de reservas -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Usuario</th>
+                <th>Libro Reservado</th>
+                <th>Fecha de Reserva</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Datos simulados de las reservas -->
+            <tr>
+                <td>1</td>
+                <td>Juan Pérez</td>
+                <td>"El Quijote"</td>
+                <td>2025-05-01</td>
+                <td>2025-05-15</td>
+                <td>Confirmada</td>
+                <td>
+                    <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleReserva">Ver</button>
+                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarReserva">Cancelar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ana Gómez</td>
+                <td>"1984"</td>
+                <td>2025-05-02</td>
+                <td>2025-05-16</td>
+                <td>Pendiente</td>
+                <td>
+                    <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleReserva">Ver</button>
+                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarReserva">Cancelar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carlos López</td>
+                <td>"Cien Años de Soledad"</td>
+                <td>2025-05-03</td>
+                <td>2025-05-17</td>
+                <td>Confirmada</td>
+                <td>
+                    <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleReserva">Ver</button>
+                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarReserva">Cancelar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal para Confirmar Cancelación de Reserva -->
+<div class="modal fade" id="modalCancelarReserva" tabindex="-1" aria-labelledby="modalCancelarReservaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCancelarReservaLabel">Confirmación de Cancelación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas cancelar esta reserva?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sí, cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal centrado para mostrar detalles de la reserva -->
+<div class="modal fade" id="modalDetalleReserva" tabindex="-1" aria-labelledby="modalDetalleReservaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDetalleReservaLabel">Detalles de la Reserva</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Detalles simulados -->
+        <p><strong>Usuario:</strong> Juan Pérez</p>
+        <p><strong>Libro:</strong> El Quijote</p>
+        <p><strong>Fecha de Reserva:</strong> 2025-05-01</p>
+        <p><strong>Fecha de Vencimiento:</strong> 2025-05-15</p>
+        <p><strong>Estado:</strong> Confirmada</p>
+        <p><strong>Observaciones:</strong> La reserva fue realizada correctamente. El libro estará disponible hasta la fecha indicada.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
