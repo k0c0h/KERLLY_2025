@@ -1,0 +1,94 @@
+<div class="container mt-5">
+    <h2>Notificaciones de Reservas</h2>
+
+    <!-- Tabla de notificaciones -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Usuario</th>
+                <th>Mensaje</th>
+                <th>Fecha de Envío</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Datos simulados de las notificaciones -->
+            <tr>
+                <td>1</td>
+                <td>Juan Pérez</td>
+                <td>Su reserva de "El Quijote" ha sido confirmada.</td>
+                <td>2025-05-01</td>
+                <td>Enviada</td>
+                <td>
+                    <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarNotificacion">Reenviar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ana Gómez</td>
+                <td>Recordatorio: Su reserva de "1984" vence el 2025-05-16.</td>
+                <td>2025-05-14</td>
+                <td>Enviada</td>
+                <td>
+                    <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarNotificacion">Reenviar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Botón para enviar una nueva notificación -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNuevaNotificacion">Enviar Nueva Notificación</button>
+</div>
+
+<!-- Modal para reenviar notificación -->
+<div class="modal fade" id="modalReenviarNotificacion" tabindex="-1" aria-labelledby="modalReenviarNotificacionLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalReenviarNotificacionLabel">Reenviar Notificación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas reenviar esta notificación?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Sí, reenviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para enviar nueva notificación -->
+<div class="modal fade" id="modalNuevaNotificacion" tabindex="-1" aria-labelledby="modalNuevaNotificacionLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalNuevaNotificacionLabel">Enviar Nueva Notificación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Seleccionar Usuario</label>
+                        <select class="form-select" id="usuario" required>
+                            <option selected>Elige un usuario...</option>
+                            <option value="1">Juan Pérez</option>
+                            <option value="2">Ana Gómez</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Enviar Notificación</button>
+            </div>
+        </div>
+    </div>
+</div>
