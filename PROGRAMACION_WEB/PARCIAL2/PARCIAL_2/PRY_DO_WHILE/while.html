@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar usando while</title>
+    <link rel="stylesheet" href="public/lib/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/estilo_while.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <h1 class="display-5 fw-bold">Tabla de Multiplicar</h1>
+            <p class="text-muted fw-bold">Usando while</p>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="txt_numtabla" class="form-label">Número de tabla</label>
+                <input type="number" class="form-control" id="txt_numtabla" placeholder="Ej: 5" onkeyup="Capturar(this)">
+            </div>
+
+            <div class="col-md-4">
+                <label for="txt_numero_inicio" class="form-label">Inicio del rango</label>
+                <input type="number" class="form-control" id="txt_numero_inicio" placeholder="Ej: 1" onkeyup="pasarNumero(this)">
+            </div>
+
+            <div class="col-md-4">
+                <label for="txt_numero_final" class="form-label">Fin del rango</label>
+                <input type="number" class="form-control" id="txt_numero_final" placeholder="Ej: 10" onkeyup="pasarNumero(this)">
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <label class="form-label">Selecciona rango con el slider</label>
+            <input type="text" class="js-range-slider form-control" name="my_range" value="">
+        </div>
+
+        <div class="mt-5">
+            <h4 class="text-primary">Resultado</h4>
+            <ul id="ul_rango" class="list-group"></ul>
+        </div>
+    </div>
+
+    <script src="./public/lib/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="public/js/while.js"></script>
+</body>
+</html>

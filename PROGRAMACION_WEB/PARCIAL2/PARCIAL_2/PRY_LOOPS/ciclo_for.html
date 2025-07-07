@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO FOR</title>
+    <link rel="stylesheet" href="./public/lib/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+
+</head>
+<body>
+    <div class="conatiner py-5">
+        <h1 >HOLA </h1>
+        <hr>
+        <h3>
+            INGRESE TABLA A MULIPLICAR
+        </h3>
+        <label for="txt_numtabla">INGRESE UN NUMERO</label>
+        <input type="number" class="form-control" id="txt_numtabla" onkeyup="Capturar(this)">
+
+        <label for="txt_numero_inicio">INGRESE UN NUMERO DE INICIO</label>
+        <input type="number" 
+        class="form-control"
+        id="txt_numero_inicio"
+        onkeyup="pasarNumero(this)">
+        <br>
+        <label for="txt_numero_final">INGRESE UN NUMERO DE FINALIZACION</label>
+        <input type="number" 
+        class="form-control"
+        id="txt_numero_final"
+        onkeyup="pasarNumero(this)">
+
+        <input type="text" class="js-range-slider" name="my_range" value="" />
+        <br>
+        <p>Resultado</p>
+        <ul id="ul_rango">
+            <li></li>
+        </ul>
+
+    </div>
+    
+
+    <script src="./public/lib/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <script src="./public/js/ciclo_for.js"></script>
+</body>
+</html>

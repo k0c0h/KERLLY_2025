@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDICIONALES EN JS</title>
+    <link rel="stylesheet" href="public/lib/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <div class="container my-5 py-5">
+        <h2>EDAD DE LA PERSONA</h2>
+        <label for="edad">Ingrese su edad: </label>
+        <input class="form-control" type="number" id="edad" placeholder="Ingrese su edad"
+            onkeypress="calcularEdad(this)" onkeyup="calcularEdad(this)">
+
+        <p id="mostrar_mensaje"></p>
+
+        <hr>
+        <h2>GÉNERO</h2>
+        <label for="genero">Ingrese la letra correspondiente a su genero(M: mujer, H: Hombre): </label>
+        <input class="form-control" type="text" id="genero" onkeypress="mostrarGenero(this)" onkeyup="mostrarGenero(this)">
+
+        <p id="mostrar_genero"></p>
+
+        <hr>
+        <h2 >HORA</h2>
+        <label for="hora">Ingrese la hora: </label>
+        <input class="form-control" value="00:00" type="time" id="hora" onkeypress="mostrar_Saludo(this)" onkeyup="mostrar_Saludo(this)" onchange="mostrar_Saludo(this)">
+
+        <p id="saludo"></p>
+
+    </div>
+
+    <script src="public/js/callcular_edad.js"></script>
+    <script src="public/lib/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

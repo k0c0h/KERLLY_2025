@@ -1,0 +1,33 @@
+.cuerpo{
+    background-color: lightgoldenrodyellow;
+}
+
+.tarjeta{
+    box-shadow: 0 20px 30px gray;
+    border-radius: 20px;
+    background-color: rgba(241, 241, 89, 0.5);
+}
+
+h4,h1,label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.select{
+    margin-top: 10px;
+    background-color: rgba(241, 241, 89, 0.5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 10px 20px lightgrey;
+}
+
+.input{
+    margin-top: 10px;
+    background-color: rgba(241, 241, 89, 0.5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 10px 20px lightgrey;
+}
+
+.input:focus{
+    box-shadow: 0 10px 20px lightgrey;
+    background-color: rgba(241, 241, 89, 0.5);
+}
+

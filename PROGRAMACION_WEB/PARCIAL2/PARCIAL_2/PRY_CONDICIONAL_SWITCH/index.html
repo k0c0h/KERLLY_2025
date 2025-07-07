@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH</title>
+    <link rel="stylesheet" href="public/lib/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body class="cuerpo">
+    <div class="container my-5">
+        <h1 class="text-center fw-bold">DÍAS DE LA SEMANA</h1>
+        <hr>
+        <div class=" tarjeta card border border-warning border-2 p-2">
+            <label for="dias_semana" class="form-label">Seleccione Día</label>
+            <select onchange="seleccionarDia(this)" class="select form-select form-select-lg" name="dias_semana" id="dias_semana">
+                <option value="" selected>Seleccione un dia de la semana: </option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+
+            <br>
+            <h4 id="txt_respuesta" class=" text-center text-success fw-bold"></h4>
+        </div>
+    </div>
+    <script src="public/js/dias_semana.js"></script>
+    <script src="public/lib/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
